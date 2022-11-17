@@ -67,7 +67,7 @@ var drawWheel = function (canvasRef, data, drawWheelProps) {
             // TEXT FILL
             ctx.fillStyle = (style && style.textColor);
             ctx.translate(centerX + Math.cos(angle + arc / 2) * textRadius, centerY + Math.sin(angle + arc / 2) * textRadius);
-            var text = data[i].option;
+            var text = "data[i].option";
             var textRotationAngle = perpendicularText
                 ? angle + arc / 2 + Math.PI / 2
                 : angle + arc / 2;
